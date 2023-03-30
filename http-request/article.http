@@ -1,0 +1,9 @@
+###
+POST http://localhost:8080/api/v1/articles
+Content-Type: application/json
+
+{
+  "author": "Martin",
+  "title": "hello world",
+  "content": "new article"
+}
