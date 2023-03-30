@@ -1,16 +1,21 @@
-package com.hexagonal.app.domain;
+package com.hexagonal.app.domain.info;
 
-import java.util.List;
+import com.hexagonal.app.domain.Article;
 
-public class Article {
+public class ArticleDetailData {
+
     private final String title;
     private final String author;
     private final String content;
 
-    public Article(String title, String author,  String content) {
+    private ArticleDetailData(String title, String author, String content) {
         this.title = title;
         this.author = author;
         this.content = content;
+    }
+
+    public static ArticleDetailData of(Article article) {
+        return new ArticleDetailData(article.getTitle(), article.getAuthor(), article.getContent());
     }
 
     public String getTitle() {

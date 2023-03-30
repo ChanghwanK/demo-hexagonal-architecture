@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class ArticleRegisterService implements NewArticleRegisterUseCase {
-//    private final ArticleService articleService;
     private final ArticleStore articleCommand;
 
     public ArticleRegisterService(final ArticleStore articleCommand) {

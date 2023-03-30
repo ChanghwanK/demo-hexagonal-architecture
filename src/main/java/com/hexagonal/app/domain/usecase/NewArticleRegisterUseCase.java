@@ -23,14 +23,15 @@ public interface NewArticleRegisterUseCase {
         private final String content;
 
         public Command(final String author, final String title, final String content) {
+            validateConstructorParameter(author, title, content);
             this.author = author;
             this.title = title;
             this.content = content;
         }
+
         public Article toArticle() {
             return new Article(author, title, content);
         }
-
         public void validateConstructorParameter(String author, String title, String content) {
             if(StringUtils.isBlank(author))
                 throw new IllegalArgumentException();
