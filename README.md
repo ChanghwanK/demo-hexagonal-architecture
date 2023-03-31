@@ -11,7 +11,8 @@
 3. Domain 객체와 Entity를 분리하면 좋을까?
 
 ## Conclusion's
-> 왜 Hexagonal Arichitecture인가?
+
+### 왜 Hexagonal Arichitecture인가?
 
 [WIKI 보러가기](https://github.com/ChanghwanK/demo-hexagonal-architecture/wiki/Why-Hexagonal%3F%3F)
 
