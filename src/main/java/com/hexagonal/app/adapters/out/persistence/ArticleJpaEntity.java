@@ -1,4 +1,4 @@
-package com.hexagonal.app.infrastructure.article;
+package com.hexagonal.app.adapters.out.persistence;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

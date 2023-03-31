@@ -1,6 +1,6 @@
-package com.hexagonal.app.domain.usecase;
+package com.hexagonal.app.application.port.in;
 
-import com.hexagonal.app.domain.info.ArticleDetailData;
+import com.hexagonal.app.application.info.ArticleDetailData;
 import lombok.Getter;
 
 public interface QueryArticleDetailDataByIdUseCase {

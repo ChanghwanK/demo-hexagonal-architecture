@@ -1,4 +1,4 @@
-package com.hexagonal.app.domain.info;
+package com.hexagonal.app.application.info;
 
 import com.hexagonal.app.domain.Article;
 

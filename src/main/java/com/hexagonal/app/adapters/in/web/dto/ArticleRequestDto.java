@@ -1,6 +1,6 @@
-package com.hexagonal.app.interfaces.article.dto;
+package com.hexagonal.app.adapters.in.web.dto;
 
-import com.hexagonal.app.domain.usecase.NewArticleRegisterUseCase;
+import com.hexagonal.app.application.port.in.NewArticleRegisterUseCase;
 import javax.validation.constraints.NotBlank;
 import lombok.Getter;
 

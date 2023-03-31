@@ -1,6 +1,6 @@
-package com.hexagonal.app.domain.service;
+package com.hexagonal.app.application.service;
 
-import com.hexagonal.app.domain.usecase.NewArticleRegisterUseCase.Command;
+import com.hexagonal.app.application.port.in.NewArticleRegisterUseCase.Command;
 import org.springframework.stereotype.Component;
 
 @Component

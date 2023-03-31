@@ -1,9 +1,9 @@
-package com.hexagonal.app.domain.service;
+package com.hexagonal.app.application.service;
 
 import com.hexagonal.app.domain.Article;
-import com.hexagonal.app.domain.ArticleReader;
-import com.hexagonal.app.domain.info.ArticleDetailData;
-import com.hexagonal.app.domain.usecase.QueryArticleDetailDataByIdUseCase;
+import com.hexagonal.app.application.port.out.LoadArticlePort;
+import com.hexagonal.app.application.info.ArticleDetailData;
+import com.hexagonal.app.application.port.in.QueryArticleDetailDataByIdUseCase;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -11,9 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(readOnly = true)
 public class QueryArticleDetailById implements QueryArticleDetailDataByIdUseCase {
 
-    public final ArticleReader reader;
+    public final LoadArticlePort reader;
 
-    public QueryArticleDetailById(ArticleReader reader) {
+    public QueryArticleDetailById(LoadArticlePort reader) {
         this.reader = reader;
     }
 

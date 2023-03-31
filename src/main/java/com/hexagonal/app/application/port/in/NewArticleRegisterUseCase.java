@@ -1,7 +1,6 @@
-package com.hexagonal.app.domain.usecase;
+package com.hexagonal.app.application.port.in;
 
 import com.hexagonal.app.domain.Article;
-import com.hexagonal.app.domain.info.ArticleRegisterCommandRes;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -9,7 +8,7 @@ import org.apache.commons.lang3.StringUtils;
  */
 public interface NewArticleRegisterUseCase {
 
-    ArticleRegisterCommandRes command(Command command);
+    void command(Command command);
     /**
      * 해당 클래스는 NewArticleRegisterUseCase에 종속되기 때문에 Interface의 중첩 클래스로 정의했습니다.
      *

@@ -1,4 +1,4 @@
-package com.hexagonal.app.domain.info;
+package com.hexagonal.app.application.info;
 
 /**
  * Domain Layer에서 Controller로 전달하기위한 VO 입니다.

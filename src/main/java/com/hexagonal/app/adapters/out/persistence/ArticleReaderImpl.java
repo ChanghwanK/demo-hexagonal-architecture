@@ -1,19 +1,17 @@
-package com.hexagonal.app.infrastructure;
+package com.hexagonal.app.adapters.out.persistence;
 
 import com.hexagonal.app.domain.Article;
-import com.hexagonal.app.domain.ArticleReader;
-import com.hexagonal.app.infrastructure.article.ArticleJpaEntity;
-import com.hexagonal.app.infrastructure.article.mapper.ArticleMapper;
-import com.hexagonal.app.infrastructure.article.repository.ArticleRepository;
+import com.hexagonal.app.application.port.out.LoadArticlePort;
+import com.hexagonal.app.adapters.out.persistence.mapper.ArticlePersistenceMapper;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ArticleReaderImpl implements ArticleReader {
+public class ArticleReaderImpl implements LoadArticlePort {
 
     private final ArticleRepository articleRepository;
-    private final ArticleMapper articleMapper;
+    private final ArticlePersistenceMapper articleMapper;
 
-    public ArticleReaderImpl(ArticleRepository articleRepository, ArticleMapper articleMapper) {
+    public ArticleReaderImpl(ArticleRepository articleRepository, ArticlePersistenceMapper articleMapper) {
         this.articleRepository = articleRepository;
         this.articleMapper = articleMapper;
     }
