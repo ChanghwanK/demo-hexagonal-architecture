@@ -1,8 +1,8 @@
-# Challenge
+# Challenge's
 1. Hexagonal과 Layered Arichitecture 장/단점 이해하기
 2. 나만의 Hexagonal Best Practice 구축
 
-### 고민's
+## 고민's
 1. 왜 Hexagonal Arichitecture인가?
 2. 헥사고날은 과연 편할까? 
    - 익숨함을 대체할 수 있을까? 
